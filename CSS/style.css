@@ -1,0 +1,188 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --darkGreen: hsl(154, 65%, 44%);
+  --blue: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%);
+  --darkBlueAplha: hsla(249, 10%, 26%, 0.3);
+  --grayishBlue: hsl(246, 25%, 77%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--red);
+  background-image: url(../images/bg-intro-mobile.png);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+}
+.grid-container {
+  display: grid;
+  align-items: center;
+  gap: 4rem;
+  margin: 5rem 2rem;
+}
+.title h1 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.title p {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.form-section {
+  display: grid;
+  gap: 2rem;
+}
+.form-section h2 {
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5em 5em;
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem var(--darkBlueAplha);
+}
+.form-section h2 > span {
+  font-weight: 400;
+}
+
+.sign-up {
+  background-color: var(--white);
+  border-radius: 1rem;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.8rem var(--darkBlueAplha);
+}
+.sign-up p {
+  color: var(--grayishBlue);
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-inline: 3rem;
+  text-align: center;
+}
+
+.sign-up a:is(:link, :visited) {
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
+}
+.sign-up a:is(:hover, :active) {
+  text-decoration: underline;
+}
+
+.input-field input {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.51rem;
+  border: 0.1rem solid var(--darkBlueAplha);
+  outline: transparent;
+}
+
+.input-field input:focus {
+  color: var(--darkBlue);
+  border-color: var(--blue);
+}
+
+.input-field.error input {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.input-field.valid input {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.error {
+  color: var(--red);
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: right;
+}
+
+.error ::placeholder {
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  color: var(--red);
+}
+
+button {
+  background-color: var(--green);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  outline: transparent;
+  border: transparent;
+  padding: 1em;
+  padding-bottom: 1.2rem;
+  box-shadow: 0 0.3rem var(--darkGreen);
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.attribution {
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .grid-container {
+    max-width: 120rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+  }
+  .title h1 {
+    font-size: 3.6rem;
+    text-align: left;
+  }
+  .title p {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 850px) {
+  .title h1 {
+    font-size: 4.8rem;
+  }
+}

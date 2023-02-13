@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="grid-container">
+      <header class="title">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <section class="form-section">
+        <h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
+        <form class="sign-up" action="/" method="get">
+          <div class="input-field">
+            <input
+              aria-label="first name"
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-field">
+            <input
+              aria-label="last name"
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-field">
+            <input
+              aria-label="e-mail"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-field">
+            <input
+              aria-label="password"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <div class="error"></div>
+          </div>
+          <button type="submit">Claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/rStrzelczyk98" target="_blank"
+          >Robert Strzelczyk</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
