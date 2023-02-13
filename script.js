@@ -36,7 +36,7 @@ const passwordValidation = function (password) {
 const setError = function (element, message) {
   const inputField = element.parentElement;
   const displayError = inputField.querySelector('.error');
-  displayError.innerText = message;
+  displayError.innerHTML = `<p>${message}</p>`;
   inputField.classList.add('error');
   inputField.classList.remove('valid');
 };
@@ -44,7 +44,7 @@ const setError = function (element, message) {
 const setSuccess = function (element) {
   const inputField = element.parentElement;
   const displayError = inputField.querySelector('.error');
-  displayError.innerText = '';
+  displayError.innerHTML = '';
   inputField.classList.add('valid');
   inputField.classList.remove('error');
 };
@@ -70,7 +70,7 @@ function checkEmail() {
   if (!eMailValue) {
     setError(eMail, 'Email Address cannot be empty');
   } else if (!emailValidation(eMailValue)) {
-    eMail.placeholder = eMail.value;
+    eMail.placeholder = 'e.g. "random@email.com" ';
     eMail.value = '';
     setError(eMail, 'Looks like this is not an email');
   } else {
@@ -82,7 +82,7 @@ function checkPassword() {
   if (!passwordValue) {
     setError(password, 'Password cannot be empty');
   } else if (!passwordValidation(passwordValue)) {
-    password.placeholder = 'e.g. m#P52s@ap$V';
+    password.placeholder = 'e.g. "m#P52s@ap$V" ';
     password.value = '';
     setError(
       password,

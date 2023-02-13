@@ -117,12 +117,13 @@ body {
   border-color: var(--green);
 }
 
-.error {
+.error p {
   color: var(--red);
   font-weight: 400;
   font-size: 1.2rem;
   font-style: italic;
   text-align: right;
+  margin: 0;
 }
 
 .error ::placeholder {
