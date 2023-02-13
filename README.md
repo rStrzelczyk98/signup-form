@@ -16,7 +16,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [Sign Up form](https://your-live-site-url.com)
+- Live Site URL: [Sign Up form](https://rstrzelczyk98.github.io/signup-form/)
 
 ## Built with
 
