@@ -39,8 +39,9 @@ body {
   color: var(--white);
   font-weight: 700;
   font-size: 3rem;
+  line-height: 1.2;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 .title p {
   color: var(--white);
